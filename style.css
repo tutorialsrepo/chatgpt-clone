@@ -1,0 +1,144 @@
+/* Universal */
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: sans-serif;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* common */
+i {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cursor-ptr {
+  cursor: pointer;
+}
+
+/* .chatgpt */
+
+.chatgpt {
+  display: flex;
+}
+
+.sidebar {
+  width: 16vw;
+  padding: 10px;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  color: white;
+  font-size: 14px;
+  background-color: black;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.new-chat {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid rgb(200, 197, 197);
+}
+
+.new-chat span i {
+  padding: 10px;
+}
+
+.chat-history {
+  padding-bottom: 10px;
+}
+
+.chat-history .day {
+  font-size: 13px;
+  display: inline-block;
+  margin: 10px 10px;
+  color: gray;
+  font-weight: 600;
+}
+
+.msg-title {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chatarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-height: 100vh;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.chatgpt::-webkit-scrollbar:not(:hover) {
+  display: none;
+}
+
+.chatarea-title {
+  margin-bottom: 50px;
+}
+.features {
+  display: flex;
+  padding: 20px;
+}
+
+.features-title {
+  margin: 15px 0px;
+  font-size: 18px;
+}
+
+.card {
+  padding: 15px;
+  margin: 10px;
+  font-size: 16px;
+  max-width: 250px;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+}
+
+.input-parent {
+  display: flex;
+  width: 50%;
+  bottom: 30px;
+  position: fixed;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+
+input {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100% !important;
+}
+
+.send-icon {
+  padding: 10px;
+  float: right;
+}
